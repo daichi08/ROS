@@ -15,7 +15,7 @@ int main(int argc, char** argv){
 
   ros::Publisher  pub;
 
-  ros::init(argc, argv, "simple_goal");
+  ros::init(argc, argv, "run");
 
   ros::NodeHandle nh;
   pub= nh.advertise<geometry_msgs::PoseWithCovarianceStamped>("initialpose", 2, true);
